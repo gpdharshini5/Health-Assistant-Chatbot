@@ -1,3 +1,4 @@
+# from keras.models import load_model
 from keras.models import load_model
 from time import sleep
 from keras.preprocessing.image import img_to_array
@@ -5,9 +6,10 @@ from keras.preprocessing import image
 import cv2
 import numpy as np
 
-face_classifier = cv2.CascadeClassifier(r'C:\Users\Admin\Desktop\PythonProject\EmotionDetectionCNN\haarcascade_frontalface_default.xml')
-classifier =load_model(r'C:\Users\Admin\Desktop\PythonProject\EmotionDetectionCNN\model.h5')
 
+face_classifier = cv2.CascadeClassifier(r'C:\Users\PRIYADHARSHINI\OneDrive\Pictures\Desktop\emotion detection\Emotion_Detection_CNN\haarcascade_frontalface_default.xml')
+classifier =load_model(r'C:\Users\PRIYADHARSHINI\OneDrive\Pictures\Desktop\emotion detection\Emotion_Detection_CNN\model.h5')
+# C:\Users\PRIYADHARSHINI\OneDrive\Pictures\Desktop\emotion detection\Emotion_Detection_CNN
 emotion_labels = ['Angry','Disgust','Fear','Happy','Neutral', 'Sad', 'Surprise']
 
 cap = cv2.VideoCapture(0)
