@@ -5,7 +5,7 @@ import requests
 
 # Define the Gemini API endpoint and your API key
 GEMINI_API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
-API_KEY = "AIzaSyB9kUM0VTdcI6dNnJFOZQDhJki30jmaBVs"
+API_KEY = "Key"
 
 # Function to predict emotion from the image
 def predict_emotion(image):
